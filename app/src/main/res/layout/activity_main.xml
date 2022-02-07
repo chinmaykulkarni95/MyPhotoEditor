@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="#FDFFFD"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="4dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:text="Save"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="638dp" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentLeft="true"
+        android:text="Edit" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter your text"
+        android:visibility="invisible" />
+
+</RelativeLayout>
